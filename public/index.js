@@ -1,13 +1,12 @@
 const fname = document.getElementById("FirstName");
 const fnamemsg = document.getElementById("FirstNameMsg");
 
-fname.addEventListener('keyup',function(){
+fname.addEventListener('keyup',() =>{
     let msg = fname.value;
     if(msg.length == 0){
         fname.style.border = "#ff7978 solid";
         fnamemsg.style.display = "block";
         fname.placeholder = "";
-        // fname.background = "url('../images/icon-error.svg')"
     }
     else{
         fnamemsg.style.display = "none";
@@ -18,7 +17,7 @@ fname.addEventListener('keyup',function(){
 const lname = document.getElementById("LastName");
 const lnamemsg = document.getElementById("LastNameMsg");
 
-lname.addEventListener('keyup',function(){
+lname.addEventListener('keyup',() =>{
     let msg = lname.value;
     if(msg.length == 0){
         lname.style.border = "#ff7978 solid";
@@ -33,7 +32,7 @@ lname.addEventListener('keyup',function(){
 const email = document.getElementById("Email");
 const emailmsg = document.getElementById("EmailMsg");
 
-email.addEventListener('keyup',function(){
+email.addEventListener('keyup',() => {
     let msg = email.value;
     if(msg.length == 0){
         email.style.border = "#ff7978 solid";
@@ -48,7 +47,7 @@ email.addEventListener('keyup',function(){
 const pwd = document.getElementById("Pwd");
 const pwdmsg = document.getElementById("PwdMsg");
 
-pwd.addEventListener('keyup',function(){
+pwd.addEventListener('keyup',() =>{
     let msg = pwd.value;
     if(msg.length == 0){
         pwd.style.border = "#ff7978 solid";
